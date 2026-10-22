@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "fontflow-vlp";
+    src: url("./fontflow-vlp.eot?75e20096a2e2a5d02d73f42e0d4501b2#iefix") format("embedded-opentype"), url("./fontflow-vlp.woff2?75e20096a2e2a5d02d73f42e0d4501b2") format("woff2"), url("./fontflow-vlp.woff?75e20096a2e2a5d02d73f42e0d4501b2") format("woff");
+}
+
+.fontflow-vlp {
+    font-family: fontflow-vlp !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fontflow-vlp-bot:before {
+    content: "\f101";
+}
+
+.fontflow-vlp-chart:before {
+    content: "\f102";
+}
+
+.fontflow-vlp-cog:before {
+    content: "\f103";
+}
+
+.fontflow-vlp-facebook-fill:before {
+    content: "\f104";
+}
+
+.fontflow-vlp-gps:before {
+    content: "\f105";
+}
+
+.fontflow-vlp-instagram:before {
+    content: "\f106";
+}
+
+.fontflow-vlp-magic:before {
+    content: "\f107";
+}
+
+.fontflow-vlp-mobile:before {
+    content: "\f108";
+}
+
+.fontflow-vlp-speak:before {
+    content: "\f109";
+}
+
+.fontflow-vlp-verbot:before {
+    content: "\f10a";
+}
+
+.fontflow-vlp-web:before {
+    content: "\f10b";
+}
+
+.fontflow-vlp-whatsapp:before {
+    content: "\f10c";
+}
+
+.fontflow-vlp-zoom:before {
+    content: "\f10d";
+}
+
+.fontflow-vlp-3square:before {
+    content: "\f10e";
+}

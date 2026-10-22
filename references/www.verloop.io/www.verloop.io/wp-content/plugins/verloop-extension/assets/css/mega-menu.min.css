@@ -1,0 +1,143 @@
+.vl-main-nav ul {
+    margin: 0;
+}
+
+.vl-main-nav ul li {
+    display: inline-block;
+    position: relative;
+    color: #B3B8D0;
+}
+
+.vl-main-nav ul li a {
+    font-family: "Outfit", sans-serif;
+    display: inline-block;
+    font-size: 15px;
+    color: #B3B8D0;
+    padding: 10px 15px;
+}
+
+.vl-main-nav ul li:hover,
+.vl-main-nav ul li a:hover {
+    color: #ffffff;
+}
+
+.vl-main-nav ul li.menu-item-has-vl-mega-menu:before,
+.vl-main-nav ul li.menu-item-has-children:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    margin: auto;
+    width: 14px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ffffff;
+    display: none;
+    transition: all 0.1s ease-in;
+}
+
+.vl-main-nav ul li.menu-item-has-vl-mega-menu:hover:before,
+.vl-main-nav ul li.menu-item-has-children:hover:before {
+    display: block;
+}
+
+/* Sub Menu & Mega Menu */
+
+.vl-main-nav ul li>ul,
+.vl-mega-menu-wrap {
+    position: absolute;
+    display: none;
+    background: #ffffff;
+    border-radius: 10px;
+    z-index: 9999;
+    top: 100%;
+    left: -80px;
+    transition: all .4s ease;
+}
+
+.vl-mega-menu-wrap>* {
+    display: none;
+}
+
+.vl-main-nav ul li:hover>ul,
+.vl-main-nav ul li:hover .vl-mega-menu-wrap,
+.vl-main-nav ul li:hover .vl-mega-menu-wrap>* {
+    display: block !important;
+}
+
+.vl-main-nav ul li.menu-item-has-vl-mega-menu ul.sub-menu {
+    display: none;
+}
+
+/* Sub Menu */
+
+.vl-main-nav ul li>ul.sub-menu {
+    left: 0;
+    width: 260px;
+    padding: 10px 0;
+}
+
+.vl-main-nav ul li>ul.sub-menu li {
+    display: block;
+}
+
+.vl-main-nav ul li>ul.sub-menu li a {
+    width: 100%;
+    padding: 5px 20px;
+    color: #272C3F;
+}
+
+.vl-main-nav ul li>ul.sub-menu li a:hover {
+    background: #f5f7ff;
+    color: #1854F1;
+    top: 0;
+}
+
+.vl-main-nav ul li>ul.sub-menu li:before {
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #fff;
+    border-right: 0;
+    right: -14px;
+    left: auto;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+}
+
+.vl-main-nav ul li>ul.sub-menu ul {
+    left: 267px;
+    top: 0;
+}
+
+.vl-main-nav>ul li.current-menu-item>a,
+.vl-main-nav>ul li.current-menu-parent>a,
+.vl-main-nav>ul li.current-menu-ancestor>a,
+.vl-main-nav>ul li.current_page_item>a,
+.vl-main-nav>ul li.current_page_parent>a,
+.vl-main-nav>ul li.current_page_ancestor>a {
+    color: #ffffff;
+}
+
+.vl-main-nav ul li>ul.sub-menu li.current-menu-item>a,
+.vl-main-nav ul li>ul.sub-menu li.current-menu-parent>a,
+.vl-main-nav ul li>ul.sub-menu li.current-menu-ancestor>a,
+.vl-main-nav ul li>ul.sub-menu li.current_page_item>a,
+.vl-main-nav ul li>ul.sub-menu li.current_page_parent>a,
+.vl-main-nav ul li>ul.sub-menu li.current_page_ancestor>a {
+    color: #1854F1;
+}
+
+.vl-main-nav>ul li.current-menu-item,
+.vl-main-nav>ul li.current-menu-parent,
+.vl-main-nav>ul li.current-menu-ancestor,
+.vl-main-nav>ul li.current_page_item,
+.vl-main-nav>ul li.current_page_parent,
+.vl-main-nav>ul li.current_page_ancestor {
+    color: #ffffff;
+}
+
+.vl-mega-menu-wrap .elementor-widget-elementskit-icon-box {
+    margin-bottom: -20px;
+}

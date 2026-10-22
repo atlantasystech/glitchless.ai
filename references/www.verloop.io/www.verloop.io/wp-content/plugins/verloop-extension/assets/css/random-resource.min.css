@@ -1,0 +1,115 @@
+.vlp-random-resource-main {
+    display: flex;
+    flex-direction: column;
+    background: #0c192a;
+    border: 1px solid #243144;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    min-height: 360px;
+    position: relative;
+}
+
+.vlp-random-resource-main:hover {
+    transition: all 0.5s;
+}
+
+.vlp-random-resource-main:before,
+.vlp-random-resource-main:after {
+    content: "";
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+    width: 50%;
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 20%;
+    margin: auto;
+}
+
+.vlp-random-resource-main:after {
+    left: auto;
+    top: auto;
+    right: 20%;
+    bottom: -1px;
+}
+
+.vlp-random-resource-main .vlp-term-wrap {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.vlp-random-resource-main .vlp-term-wrap a {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 6px 20px;
+    background: #0c1929;
+    border-radius: 50px;
+    border: 1px solid #243142;
+    position: relative;
+}
+
+.vlp-random-resource-main .vlp-term-wrap a:before,
+.vlp-random-resource-main .vlp-term-wrap a:after {
+    content: "";
+    background: linear-gradient(to right, #1B283B, #687182, #1B283B);
+    width: 50%;
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 20px;
+}
+
+.vlp-random-resource-main .vlp-term-wrap a:after {
+    top: auto;
+    bottom: -1px;
+    left: auto;
+    right: 20px;
+}
+
+.vlp-random-resource-main .vlp-post-title-wrap {
+    margin-bottom: 20px;
+}
+
+.vlp-random-resource-main .vlp-post-title-wrap a {
+    font-size: 28px;
+    color: #ffffff;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* number of lines to show */
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.vlp-random-resource-main .vlp-post-link-button {
+    display: flex;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: auto;
+    align-items: center;
+}
+
+.vlp-random-resource-main .vlp-post-link-button .vlp-icon-wrap {
+    margin-left: 10px;
+    color: #ffffff;
+    fill: #ffffff;
+    line-height: 0;
+}
+
+.vlp-random-resource-main .vlp-post-link-button .vlp-icon-wrap svg {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+}
+
+@media (max-width: 1200px) {
+    .vlp-random-resource-main .vlp-post-title-wrap a {
+        font-size: 20px;
+    }
+    .vlp-random-resource-main {
+        min-height: 300px;
+    }
+}
